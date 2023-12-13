@@ -1,0 +1,80 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #C0DBEA;
+    font-family: 'Autour One', cursive;
+    color: #191D88;
+}
+
+.title {
+    font-weight: bold;
+}
+
+.box {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 5px;
+    width: 450px;
+    height: 450px;
+    padding: 5px;
+    border-radius: 3%;
+    background-color: #5D12D2;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.btn-light {
+    background-color: #FDF0F0;
+    font-size: 3rem;
+    color:#FFC7EA;
+}
+
+.btn-warning {
+    background-color: #EE9322;
+}
+
+#result {
+    font-size: 1.5rem;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.player-1 {
+    font-size: 5rem;
+    color: #95CD41;
+}
+
+.player-2 {
+    font-size: 5rem;
+    color: #C70039;
+}
+
+.win {
+    background-color: #FFE300;
+}
+
+.pressed {
+    box-shadow: 0 0 20px white !important; 
+    background-color: #DA0C81 !important;
+}
+
+@media (max-width: 600px) {
+    .box {
+        width: 400px;
+        height: 400px;
+    }
+    
+    .player-1 {
+        font-size: 4rem;
+    }
+
+    .player-2 {
+        font-size: 4rem;
+    }
+}
